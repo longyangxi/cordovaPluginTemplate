@@ -17,12 +17,12 @@ import android.util.Log;
 import java.util.Date;
 
 public class PluginTemplate extends CordovaPlugin {
-  private static final String TAG = "MyCordovaPlugin";
+  private static final String TAG = "PluginTemplate";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
 
-    Log.d(TAG, "Initializing MyCordovaPlugin");
+    Log.d(TAG, "Initializing PluginTemplate");
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {

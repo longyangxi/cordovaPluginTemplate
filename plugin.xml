@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-template"
     version="1.0.0">
-    <name>Cordova Plugin Template</name>
+    <name>PluginTemplate</name>
     <description>Cordova Plugin Template</description>
     <license>MIT</license>
     <keywords></keywords>
@@ -15,7 +15,7 @@
       <js-module src="www/PluginTemplate.js" name="PluginTemplate">
         <runs/>
 
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <!-- This is the window variable name you want, like window.PluginTemplate -->
         <clobbers target="PluginTemplate" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
@@ -30,7 +30,7 @@
 
     <!-- ios -->
     <platform name="ios">
-        <js-module src="www/PluginTemplate.js" name="plugin">
+        <js-module src="www/PluginTemplate.js" name="PluginTemplate">
             <runs/>
             <clobbers target="PluginTemplate" />
         </js-module>
