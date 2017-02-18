@@ -5,24 +5,17 @@
 @implementation PluginTemplate
 
 - (void)pluginInitialize {
+    //add observer or initialize here
 }
 
-- (void)echo:(CDVInvokedUrlCommand *)command {
-  NSString* phrase = [command.arguments objectAtIndex:0];
-  NSLog(@"%@", phrase);
-}
+- (void)sayHello:(CDVInvokedUrlCommand *)command {
 
-- (void)getDate:(CDVInvokedUrlCommand *)command {
-  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-  NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
-  [dateFormatter setLocale:enUSPOSIXLocale];
-  [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+    NSString* words = [command.arguments objectAtIndex:0];
+    NSLog(@"*******js says: %@", words);
 
-  NSDate *now = [NSDate date];
-  NSString *iso8601String = [dateFormatter stringFromDate:now];
-
-  CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:iso8601String];
-  [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+    NSString* echo = @"I am native!";
+    CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
+    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
 @end

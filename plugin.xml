@@ -37,11 +37,11 @@
     </js-module>
 
     <platform name="android">
-        <source-file src="src/android/com/example/PluginTemplate.java" target-dir="src/com/example/" />
+        <source-file src="src/android/plugins/PluginTemplate.java" target-dir="src/plugins/" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PluginTemplate">
-                <param name="android-package" value="com.example.PluginTemplate" />
+                <param name="android-package" value="plugins.PluginTemplate" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
