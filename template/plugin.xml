@@ -24,7 +24,7 @@
         id="cordova-plugin-template"
         version="1.0.0">
     <name>PluginTemplate</name>
-    <description>Cordova Plugin Teamplate</description>
+    <description>a cordova plugin template</description>
     <license>Apache 2.0</license>
     <keywords>cordova,template</keywords>
 
@@ -32,7 +32,7 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <js-module src="www/PluginTemplate.js" name="template">
+    <js-module src="www/PluginTemplate.js" name="PluginTemplate">
         <clobbers target="window.PluginTemplate" />
     </js-module>
 
