@@ -25,15 +25,27 @@ var pluginDes = args[2] || TEMPLATE_DES;
 
 var ncp = require('ncp').ncp;
 
-removeTemplate("./" + pluginName);
+var pluginFolder = "./" + pluginName;
+
+removeTemplate(pluginFolder);
 
 ncp.limit = 16;
-ncp("./template", "./" + pluginName, function (err) {
+ncp("./template", pluginFolder, function (err) {
     if (err) {
         return console.error(err);
     }
-    console.log("***********copy template ok");
-    editTemplate("./" + pluginName)
+    editTemplate(pluginFolder);
+
+    var cmd = "cordova plugin add " + pluginFolder;
+    cmdProcess.exec(
+        cmd
+        ,function (error, stdout, stderr) {
+            if (error !== null) {
+                console.log('exec error: ' + error);
+            } else {
+                removeTemplate(pluginFolder);
+            }
+        })
 });
 
 function removeTemplate(file){
