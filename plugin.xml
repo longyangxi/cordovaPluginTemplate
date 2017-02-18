@@ -12,7 +12,7 @@
 
     <!-- android -->
     <platform name="android">
-      <js-module src="www/PluginTemplate.js" name="plugin">
+      <js-module src="www/PluginTemplate.js" name="PluginTemplate">
         <runs/>
 
         <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
