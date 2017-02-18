@@ -36,7 +36,8 @@
         </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="PluginTemplate">
-                <param name="ios-package" value="PluginTemplate" onload="true" />
+                <param name="ios-package" value="PluginTemplate" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
