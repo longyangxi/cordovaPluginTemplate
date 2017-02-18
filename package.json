@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-template",
+  "version": "1.0.0",
+  "description": "a cordova plugin template",
+  "cordova": {
+    "id": "cordova-plugin-template",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longyangxi/cordovaPluginTemplate.git"
+  },
+  "keywords": [
+    "cordova","template"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "MIT"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-template"
+    version="1.0.0">
+    <name>Cordova Plugin Template</name>
+    <description>Cordova Plugin Template</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/longyangxi/cordovaPluginTemplate.git</repo>
+    <issue>https://github.com/longyangxi/cordovaPluginTemplate/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/PluginTemplate.js" name="plugin">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="PluginTemplate" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="PluginTemplate">
+          <param name="android-package" value="com.example.PluginTemplate" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/com/example/PluginTemplate.java" target-dir="src/com/example/" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/PluginTemplate.js" name="plugin">
+            <runs/>
+            <clobbers target="PluginTemplate" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="PluginTemplate">
+                <param name="ios-package" value="PluginTemplate" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/PluginTemplate.h" />
+        <source-file src="src/ios/PluginTemplate.m" />
+    </platform>
+</plugin>
