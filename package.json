@@ -1,29 +1,21 @@
 {
-  "name": "cordova-plugin-generator",
-  "version": "1.0.1",
-  "description": "generator a template cordova plugin",
-  "main": "index.js",
-  "dependencies": {
-    "ncp": "^2.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "cordova-plugin-template",
+  "version": "1.0.0",
+  "description": "a cordova plugin template",
+  "cordova": {
+    "id": "cordova-plugin-template",
+    "platforms": [
+      "android",
+      "ios"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/longyangxi/cordovaPluginTemplate.git"
+    "url": "https://github.com/longyangxi/cordovaPluginTemplate.git"
   },
   "keywords": [
-    "cordova",
-    "plugin",
-    "template",
-    "generator"
+    "cordova","template"
   ],
-  "author": "longsir",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/longyangxi/cordovaPluginTemplate/issues"
-  },
-  "homepage": "https://github.com/longyangxi/cordovaPluginTemplate#readme"
+  "author": "Apache Software Foundation",
+  "license": "MIT"
 }
